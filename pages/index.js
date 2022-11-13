@@ -1,10 +1,14 @@
-import Head from "next/head";
-import Image from "next/image";
+import Layout from "../components/Layout";
+import confetti from "canvas-confetti";
+import Bio from "../components/Bio";
 
 export default function Home() {
-  return (
-    <div>
-      <h1 className="font-bold">Hola</h1>
-    </div>
-  );
+  const handleConfetti = () => {
+    confetti({
+      particleCount: 100,
+      spread: 80,
+    });
+  };
+
+  return <Bio />;
 }
