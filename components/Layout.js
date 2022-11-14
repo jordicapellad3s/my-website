@@ -4,7 +4,7 @@ export default function Layout({ children }) {
   return (
     <>
       <motion.div
-        className="p-4 pt-8 pb-36 sm:pt-36"
+        className="p-4 pt-8 pb-36 sm:pt-20"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}

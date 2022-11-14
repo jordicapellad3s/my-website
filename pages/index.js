@@ -1,14 +1,15 @@
 import Layout from "../components/Layout";
 import confetti from "canvas-confetti";
 import Bio from "../components/Bio";
+import Work from "../components/Work";
+import Personal from "../components/Personal";
 
 export default function Home() {
-  const handleConfetti = () => {
-    confetti({
-      particleCount: 100,
-      spread: 80,
-    });
-  };
-
-  return <Bio />;
+  return (
+    <>
+      <Bio />
+      <Work />
+      <Personal />
+    </>
+  );
 }

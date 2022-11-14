@@ -6,5 +6,9 @@ p {
   @apply text-base font-normal font-inter text-neutral-700;
 }
 
+h1 {
+  @apply font-inter text-neutral-900;
+}
+
 
 

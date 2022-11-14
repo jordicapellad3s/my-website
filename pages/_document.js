@@ -12,7 +12,7 @@ export default function Document() {
         />
         <link rel="icon" href="https://emojicdn.elk.sh/✌🏼" />
       </Head>
-      <body className="antialiased bg-gradient-to-l from-[#628598] via-[#aba487] to-[#424b55]">
+      <body className="antialiased bg-neutral-50">
         <Main />
         <NextScript />
       </body>
