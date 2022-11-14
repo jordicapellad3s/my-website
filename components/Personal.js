@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Tag from "./Tag";
 
 export default function Personal() {
@@ -7,8 +8,10 @@ export default function Personal() {
       <ul className="[&_li]:mt-3 ml-6 list-disc text-neutral-600 font-inter">
         <li>
           <p>
-            <span className="font-medium">Blog</span> about my personal projects
-            and my learning process.
+            <Link href="/posts">
+              <span className="font-medium underline cursor-pointer">Blog</span>{" "}
+            </Link>
+            about my personal projects, life, and thoughts.
           </p>
         </li>
         <li>
