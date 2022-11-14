@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import confetti from "canvas-confetti";
+import Tooltip from "./Tooltip";
 
 const handleConfetti = () => {
   confetti({
@@ -22,12 +23,12 @@ export default function Bio() {
               height={80}
               className="rounded-[2rem]"
             />
-            <span className="p-1 absolute -bottom-2 border-2 border-sky-300 rounded-full -left-2 bg-neutral-50 ] cursor-pointer">
+            <span className="absolute p-1 border-2 border-blue-600 rounded-full cursor-pointer -bottom-2 -left-2 bg-neutral-50">
               <Image
                 src="https://emojicdn.elk.sh/🎉"
                 alt="Peace sign emoji"
-                width={20}
-                height={20}
+                width={25}
+                height={25}
                 onClick={handleConfetti}
               />
             </span>
@@ -37,9 +38,7 @@ export default function Bio() {
             <p className="text-neutral-500 font-inter">
               @jordicapellad3s on{" "}
               <span className="relative group w-max">
-                <span className="absolute left-0 px-2 text-sm font-medium transition-opacity delay-200 rounded-md opacity-0 pointer-events-none bg-slate-800 text-neutral-50 -bottom-5 w-max group-hover:opacity-100">
-                  Follow me on Twitter!
-                </span>
+                <Tooltip>Follow me on Twitter!</Tooltip>
                 <Link
                   target="_blank"
                   rel="noopener noreferrer"
@@ -52,9 +51,7 @@ export default function Bio() {
               </span>
               and{" "}
               <span className="relative group w-max">
-                <span className="absolute left-0 px-2 text-sm font-medium transition-opacity delay-200 rounded-md opacity-0 pointer-events-none bg-slate-800 text-neutral-50 -bottom-5 w-max group-hover:opacity-100">
-                  Follow me on Github!
-                </span>
+                <Tooltip>Follow me on Github!</Tooltip>
                 <Link
                   target="_blank"
                   rel="noopener noreferrer"
@@ -68,31 +65,35 @@ export default function Bio() {
             </p>
           </div>
         </div>
-        <div className="flex items-center gap-2">
-          <h1 className="text-4xl font-bold font-inter">Hello, World!</h1>
-          <Image
-            src="https://emojicdn.elk.sh/🌍"
-            alt="World emoji"
-            width={30}
-            height={30}
-          />
-          <Image
-            src="https://emojicdn.elk.sh/👋🏼"
-            alt="Waving hand emoji"
-            width={30}
-            height={30}
-          />
+        <div className="mt-6">
+          <div className="flex items-center gap-2">
+            <h1 className="text-xl font-bold font-inter">Hello, World!</h1>
+            <div className="flex gap-1">
+              <Image
+                src="https://emojicdn.elk.sh/🌍"
+                alt="World emoji"
+                width={20}
+                height={20}
+              />
+              <Image
+                src="https://emojicdn.elk.sh/👋🏼"
+                alt="Waving hand emoji"
+                width={20}
+                height={20}
+              />
+            </div>
+          </div>
+          <p className="text-neutral-700 font-inter">
+            I&apos;m a developer based in{" "}
+            <span className="font-bold">Barcelona</span> with a passion for
+            create and building digital stuff. I&apos;m currently learning
+            Frontend technologists like{" "}
+            <span className="font-medium underline">
+              Next, React and Tailwind
+            </span>
+            .
+          </p>
         </div>
-        <p className="text-neutral-700 font-inter">
-          I&apos;m a developer based in{" "}
-          <span className="font-bold">📍Barcelona</span> with a passion for
-          create and building digital stuff. I&apos;m currently learning
-          Frontend technologists like{" "}
-          <span className="font-medium underline">
-            Next, React and Tailwind
-          </span>
-          .
-        </p>
       </div>
     </>
   );
