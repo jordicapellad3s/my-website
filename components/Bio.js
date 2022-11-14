@@ -36,25 +36,35 @@ export default function Bio() {
             <h1 className="text-2xl font-black font-inter">Jordi Capellades</h1>
             <p className="text-neutral-500 font-inter">
               @jordicapellad3s on{" "}
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://twitter.com/jordicapellad3s"
-              >
-                <span className="font-semibold cursor-pointer hover:underline">
-                  Twitter
-                </span>{" "}
-              </Link>
-              and{" "}
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/jordicapellad3s"
-              >
-                <span className="font-semibold cursor-pointer hover:underline">
-                  GitHub
+              <span className="relative group w-max">
+                <span className="absolute left-0 px-2 text-sm font-medium transition-opacity delay-200 rounded-md opacity-0 pointer-events-none bg-slate-800 text-neutral-50 -bottom-5 w-max group-hover:opacity-100">
+                  Follow me on Twitter!
                 </span>
-              </Link>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://twitter.com/jordicapellad3s"
+                >
+                  <span className="font-semibold cursor-pointer hover:underline">
+                    Twitter
+                  </span>{" "}
+                </Link>
+              </span>
+              and{" "}
+              <span className="relative group w-max">
+                <span className="absolute left-0 px-2 text-sm font-medium transition-opacity delay-200 rounded-md opacity-0 pointer-events-none bg-slate-800 text-neutral-50 -bottom-5 w-max group-hover:opacity-100">
+                  Follow me on Github!
+                </span>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/jordicapellad3s"
+                >
+                  <span className="font-semibold cursor-pointer hover:underline">
+                    GitHub
+                  </span>
+                </Link>
+              </span>
             </p>
           </div>
         </div>
