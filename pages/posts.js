@@ -5,7 +5,6 @@ import { parseISO, format } from "date-fns";
 import Tag from "../components/Tag";
 
 export default function Posts({ allPostsData }) {
-  console.log(allPostsData);
   return (
     <div>
       <div className="mb-6">
