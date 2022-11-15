@@ -1,10 +1,8 @@
 import React from "react";
 
-export default function Tag({ children, color }) {
+export default function Tag({ bg, children }) {
   return (
-    <span
-      className={`px-2 mx-1 font-semibold text-white bg-${color}-300 rounded-md`}
-    >
+    <span className={`px-2 mx-1 font-semibold ${bg} text-white rounded-md`}>
       {children}
     </span>
   );
