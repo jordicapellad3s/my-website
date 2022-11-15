@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-export default function technicalPosts() {
+export default function TechnicalPosts() {
   return (
     <div>
       <Link href="/" className="mb-3">
