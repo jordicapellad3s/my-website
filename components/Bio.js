@@ -1,38 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
-import confetti from "canvas-confetti";
 import Tooltip from "./Tooltip";
-
-const handleConfetti = () => {
-  confetti({
-    particleCount: 100,
-    spread: 80,
-  });
-};
 
 export default function Bio() {
   return (
     <>
       <div className="flex flex-col items-start gap-4 p-4 mb-4">
         <div className="flex items-center gap-2">
-          <div className="relative">
-            <Image
-              src="/images/selfie-1.jpeg"
-              alt="Selfie of Jordi Capellades"
-              width={80}
-              height={80}
-              className="rounded-[2rem]"
-            />
-            <span className="absolute p-1 border-2 border-blue-600 rounded-full cursor-pointer -bottom-2 -left-2 bg-neutral-50">
-              <Image
-                src="https://emojicdn.elk.sh/🎉"
-                alt="Peace sign emoji"
-                width={25}
-                height={25}
-                onClick={handleConfetti}
-              />
-            </span>
-          </div>
+          <Image
+            src="/images/selfie-1.jpeg"
+            alt="Selfie of Jordi Capellades"
+            width={80}
+            height={80}
+            className="rounded-[2rem]"
+          />
+
           <div>
             <h1 className="text-2xl font-black font-inter">Jordi Capellades</h1>
             <p className="text-neutral-500 font-inter">
