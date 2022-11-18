@@ -10,7 +10,7 @@ export default function Date({ dateString, type }) {
         </time>
       ) : (
         <time className="text-[#a1a1aa] text-sm" dateTime={dateString}>
-          {format(date, "LLL d, yyyy")}
+          {format(date, "LLL d")}
         </time>
       )}
     </>
