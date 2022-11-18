@@ -1,6 +1,7 @@
 ---
-title: 'New best extension for productivity'
-date: '2022-10-02'
+title: "New best extension for productivity"
+date: "2022-10-02"
+tag: ["dev"]
 ---
 
 Today I discovered a new extension for productivity. This extension is called [**Otto**](https://ottoapp.me/). Otto is a Chrome extension with a pomodoro timer with a website blocker so you can be focused and productive while working or studying.

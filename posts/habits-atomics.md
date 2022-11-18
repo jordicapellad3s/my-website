@@ -1,6 +1,7 @@
 ---
 title: "Habits atomics"
 date: "2022-09-10"
+tag: ["life"]
 ---
 
 I'm already finished the book Habits atomics by **James Clear** and I recommend this book to the people who want to start a new habit or remove one of his life.

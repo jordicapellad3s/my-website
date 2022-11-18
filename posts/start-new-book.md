@@ -1,7 +1,7 @@
 ---
 title: "Start reading a new book"
 date: "2022-08-24"
-tag: "book"
+tag: ["book"]
 ---
 
 One weeks ago I started reading a new book. This book is called **The subtle art of giving a shit about (almost everything)** by Mark Manson.

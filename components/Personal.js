@@ -34,8 +34,11 @@ export default function Personal() {
         </li>
         <li>
           <p>
-            <span className="font-medium">Vault</span>, a password manager for
-            myself with <Tag bg="bg-red-300">Laravel Breeze</Tag> +{" "}
+            <Link href="/posts/vault">
+              <span className="font-medium underline">Vault</span>
+            </Link>
+            , a password manager for myself with{" "}
+            <Tag bg="bg-red-300">Laravel Breeze</Tag> +{" "}
             <Tag bg="bg-cyan-300">React</Tag>
           </p>
         </li>

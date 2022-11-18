@@ -1,7 +1,7 @@
 ---
 title: "First time"
 date: "2022-09-01"
-tag: "life"
+tag: ["life"]
 ---
 
 Today I read a tweet that say:

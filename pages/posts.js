@@ -3,6 +3,7 @@ import { getSortedPostsData } from "../lib/posts";
 import Date from "../components/Date";
 import { parseISO, format } from "date-fns";
 import Tag from "../components/Tag";
+import PostType from "../components/PostType";
 
 export default function Posts({ allPostsData }) {
   return (
@@ -37,7 +38,10 @@ export default function Posts({ allPostsData }) {
                 >
                   {title}
                 </Link>
-                {tag && <Tag bg="bg-slate-600">{tag}</Tag>}
+                {tag &&
+                  tag.map((tag, index) => (
+                    <PostType key={index}>{tag}</PostType>
+                  ))}
               </div>
               <small className="">
                 <Date dateString={date} />
