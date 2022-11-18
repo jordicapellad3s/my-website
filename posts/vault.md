@@ -4,7 +4,7 @@ date: "2022-11-18"
 tag: ["project", "dev"]
 ---
 
-I have been working on a project called Vault. It is a simple password manager that I am building to learn more about Next and Tailwind. My goal is to have a simple password manager that I can use to store my passwords and have them available on all my devices.
+I have been working on a project called **Vault**. It is a simple password manager that I am building to learn more about **Laravel Breeze + React** and **Tailwind**. My goal is to have a simple password manager that I can use to store my passwords and have them available on all my devices.
 
 Right now I am working on the web version and I am planning to build a mobile version in the future. But for now, I am happy with the web version.
 
