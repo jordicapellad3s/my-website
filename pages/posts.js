@@ -25,7 +25,7 @@ export default function Posts({ allPostsData }) {
         </p>
       </div>
       <div className="mt-6 space-y-2">
-        {allPostsData.map(({ id, date, title, tag }) => (
+        {allPostsData.map(({ id, date, title, tags }) => (
           <ul key={id} className="font-medium font-inter text-neutral-900">
             <li
               className="flex flex-col justify-between m-0 sm:flex-row md:items-center"
@@ -38,8 +38,8 @@ export default function Posts({ allPostsData }) {
                 >
                   {title}
                 </Link>
-                {tag &&
-                  tag.map((tag, index) => (
+                {tags &&
+                  tags.map((tag, index) => (
                     <PostType key={index}>{tag}</PostType>
                   ))}
               </div>

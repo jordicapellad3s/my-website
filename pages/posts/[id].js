@@ -18,7 +18,9 @@ export default function Post({ postData }) {
           ← Jordi Capellades&apos; Blog
         </Link>
       </div>
-      <article className="prose prose-img:rounded-lg font-inter">
+      {/* prose image center */}
+
+      <article className="prose prose-img:rounded-lg prose-img:mx-auto font-inter">
         <h1 className="m-0 text-4xl font-bold font-fraunces">
           {postData.title}
         </h1>
