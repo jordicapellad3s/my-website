@@ -1,7 +1,7 @@
 ---
 title: "Non negotiables"
 date: "2022-09-27"
-tag: ["life"]
+tags: ["life"]
 ---
 
 If you want to change who you are, you must change what you do, how you speak, and how you think. You need **NON-NEGOTIABLE** things daily.

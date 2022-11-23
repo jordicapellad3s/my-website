@@ -1,7 +1,7 @@
 ---
 title: "Vault"
 date: "2022-11-18"
-tag: ["project", "dev"]
+tags: ["project", "dev"]
 ---
 
 I have been working on a project called **Vault**. It is a simple password manager that I am building to learn more about **Laravel Breeze + React** and **Tailwind**. My goal is to have a simple password manager that I can use to store my passwords and have them available on all my devices.
