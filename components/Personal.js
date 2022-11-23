@@ -42,6 +42,15 @@ export default function Personal() {
             <Tag bg="bg-cyan-300">React</Tag>
           </p>
         </li>
+        <li>
+          <p>
+            <Link href="/posts/wedding-invitation">
+              <span className="font-medium underline">Wedding invitation</span>
+            </Link>{" "}
+            for my brother with <Tag bg="bg-neutral-300">Next</Tag> +{" "}
+            <Tag bg="bg-blue-300">Tailwind</Tag>
+          </p>
+        </li>
       </ul>
     </div>
   );
