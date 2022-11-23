@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Tag from "./Tag";
 import Tooltip from "./Tooltip";
+import { FaGithubAlt } from "react-icons/fa";
 
 export default function Personal() {
   return (
@@ -21,13 +22,22 @@ export default function Personal() {
           </p>
         </li>
         <li>
-          <p>
+          <p className="flex items-center">
             This personal website with <Tag bg="bg-neutral-300">Next</Tag>
+            <Link
+              href="https://github.com/jordicapellad3s/my-website"
+              target="_blank"
+              className="font-medium underline"
+            >
+              <FaGithubAlt className="w-4 h-4 hover:opacity-50" />
+            </Link>
           </p>
         </li>
         <li>
           <p>
-            <span className="font-medium">Spotify</span> clone with{" "}
+            <Link href="/posts/spotify-clone">
+              <span className="font-medium underline">Spotify</span> clone with{" "}
+            </Link>
             <Tag bg="bg-neutral-300">Next</Tag> +{" "}
             <Tag bg="bg-blue-300">Tailwind</Tag>{" "}
           </p>
