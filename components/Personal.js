@@ -61,6 +61,16 @@ export default function Personal() {
             <Tag bg="bg-blue-300">Tailwind</Tag>
           </p>
         </li>
+        <li>
+          <p>
+            <Link href="/posts/landing">
+              <span className="font-medium underline">Landing page</span>
+            </Link>{" "}
+            to learn <Tag bg="bg-yellow-300">Typescript</Tag> +{" "}
+            <Tag bg="bg-neutral-300">Next</Tag> +{" "}
+            <Tag bg="bg-blue-300">Tailwind</Tag>
+          </p>
+        </li>
       </ul>
     </div>
   );
