@@ -8,6 +8,10 @@ I have been working on a project called **Vault**. It is a simple password manag
 
 Right now I am working on the web version and I am planning to build a mobile version in the future. But for now, I am happy with the web version.
 
-Keep in mind that this is a work in progress and I am still working on it. I am not a designer so the UI is not the best but I am working on it. Here is a screenshot of the web version:
+Keep in mind that this is a work in progress and I am still working on it. I am not a designer so the UI is not the best but I am working on it. Here some screenshots of the web version:
 
-![Vault](/images/vault-preview.png "Vault")
+![Vault](/images/vault/vault-1.png "Vault")
+
+![Vault](/images/vault/vault-3.png "Vault")
+
+![Vault](/images/vault/vault-5.png "Vault")

@@ -20,7 +20,7 @@ export default function Post({ postData }) {
       </div>
       {/* prose image center */}
 
-      <article className="prose prose-img:rounded-lg prose-img:mx-auto font-inter">
+      <article className="prose prose-img:border prose-img:rounded-lg prose-img:mx-auto font-inter">
         <h1 className="m-0 text-4xl font-bold font-fraunces">
           {postData.title}
         </h1>
