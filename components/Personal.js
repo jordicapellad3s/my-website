@@ -2,10 +2,16 @@ import Link from "next/link";
 import Tag from "./Tag";
 import Tooltip from "./Tooltip";
 import { FaGithubAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function Personal() {
   return (
-    <div className="flex flex-col items-start p-4 mb-4 bg-neutral-100 rounded-3xl">
+    <motion.div
+      className="flex flex-col items-start p-4 mb-4 bg-neutral-100 rounded-3xl"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.8 }}
+    >
       <h1 className="text-lg font-semibold font-inter">Personal Projects</h1>
       <ul className="[&_li]:mt-3 ml-6 list-disc text-neutral-600 font-inter">
         <li>
@@ -22,16 +28,7 @@ export default function Personal() {
           </p>
         </li>
         <li>
-          <p className="flex items-center">
-            This personal website with <Tag bg="bg-neutral-300">Next</Tag>
-            <Link
-              href="https://github.com/jordicapellad3s/my-website"
-              target="_blank"
-              className="font-medium underline"
-            >
-              <FaGithubAlt className="w-4 h-4 hover:opacity-50" />
-            </Link>
-          </p>
+          <p className="flex items-center">This personal website.</p>
         </li>
         <li>
           <p>
@@ -47,9 +44,7 @@ export default function Personal() {
             <Link href="/posts/vault">
               <span className="font-medium underline">Vault</span>
             </Link>
-            , a password manager for myself with{" "}
-            <Tag bg="bg-red-300">Laravel Breeze</Tag> +{" "}
-            <Tag bg="bg-cyan-300">React</Tag>
+            , a password manager.
           </p>
         </li>
         <li>
@@ -57,8 +52,7 @@ export default function Personal() {
             <Link href="/posts/wedding-invitation">
               <span className="font-medium underline">Wedding invitation</span>
             </Link>{" "}
-            for my brother with <Tag bg="bg-neutral-300">Next</Tag> +{" "}
-            <Tag bg="bg-blue-300">Tailwind</Tag>
+            for my brother.
           </p>
         </li>
         <li>
@@ -71,7 +65,15 @@ export default function Personal() {
             <Tag bg="bg-blue-300">Tailwind</Tag>
           </p>
         </li>
+        <li>
+          <p>
+            <Link href="/posts/progress">
+              <span className="font-medium underline">Progress</span>
+            </Link>
+            , a simple app with date information.
+          </p>
+        </li>
       </ul>
-    </div>
+    </motion.div>
   );
 }

@@ -3,6 +3,7 @@ import Date from "../../components/Date";
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Post({ postData }) {
   return (
@@ -10,24 +11,41 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <div className="mb-6">
+      <motion.div
+        className="mb-6"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.2 }}
+      >
         <Link
           href="/posts"
           className="px-2 py-1 font-bold text-neutral-800 hover:underline"
         >
           ← Jordi Capellades&apos; Blog
         </Link>
-      </div>
+      </motion.div>
       {/* prose image center */}
 
       <article className="prose prose-img:border prose-img:rounded-lg prose-img:mx-auto font-inter">
-        <h1 className="m-0 text-4xl font-bold font-fraunces">
-          {postData.title}
-        </h1>
-        <div className="mb-4">
-          <Date type="long" dateString={postData.date} />
-        </div>
-        <ReactMarkdown>{postData.contentHtml}</ReactMarkdown>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+        >
+          <h1 className="m-0 text-4xl font-bold font-fraunces">
+            {postData.title}
+          </h1>
+          <div className="mb-4">
+            <Date type="long" dateString={postData.date} />
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6 }}
+        >
+          <ReactMarkdown>{postData.contentHtml}</ReactMarkdown>
+        </motion.div>
       </article>
     </>
   );
