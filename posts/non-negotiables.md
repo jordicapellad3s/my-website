@@ -31,5 +31,5 @@ Mindful meditation is the practice of focusing on the present moment and the fut
 Move your body if you want to live a longer and healthier life. We are designed to move not to stay in the sofa wathing Netflix. So if you're not moving, you're not living.
 
 ```bash
-20 pushups if you're are reading this.
+20 pushups if you're reading this.
 ```
